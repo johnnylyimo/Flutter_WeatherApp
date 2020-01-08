@@ -7,7 +7,8 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
-  void getLocation() {}
+//  bring current user location of the device
+  void getLocation() async {}
 
   @override
   Widget build(BuildContext context) {
