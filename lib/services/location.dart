@@ -4,4 +4,6 @@ class Location {
   // class member variables
   double latitude;
   double longitude;
+
+  void getCurrentLocation() async {}
 }
