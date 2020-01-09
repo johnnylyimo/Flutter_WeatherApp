@@ -5,5 +5,7 @@ class Location {
   double latitude;
   double longitude;
 
-  void getCurrentLocation() async {}
+  void getCurrentLocation() async {
+    try {} catch (e) {}
+  }
 }
