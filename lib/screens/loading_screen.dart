@@ -18,6 +18,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 //  bring current user location of the device
   void getLocation() async {
     Location location = Location();
+    await location.getCurrentLocation();
   }
 
   @override
