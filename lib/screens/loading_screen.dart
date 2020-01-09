@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:weather_app/services/location.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -15,11 +16,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
 //  bring current user location of the device
-  void getLocation() async {
-    Position position = await Geolocator()
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
-    print(position);
-  }
+  void getLocation() async {}
 
   @override
   Widget build(BuildContext context) {
