@@ -16,7 +16,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
 //  bring current user location of the device
-  void getLocation() async {}
+  void getLocation() async {
+    Location location = Location();
+  }
 
   @override
   Widget build(BuildContext context) {
