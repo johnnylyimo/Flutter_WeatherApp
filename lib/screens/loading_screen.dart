@@ -11,6 +11,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    getLocation();
   }
 
 //  bring current user location of the device
