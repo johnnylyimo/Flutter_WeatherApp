@@ -6,6 +6,9 @@ class Location {
   double longitude;
 
   void getCurrentLocation() async {
-    try {} catch (e) {}
+    try {
+      Position position = await Geolocator()
+          .getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
+    } catch (e) {}
   }
 }
