@@ -24,7 +24,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void getLocationData() async {
     Location location = Location();
     await location.getCurrentLocation();
-    print(location.latitude);
+    latitude = location.latitude;
     print(location.longitude);
   }
 
