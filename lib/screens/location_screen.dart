@@ -9,6 +9,8 @@ class LocationScreen extends StatefulWidget {
 }
 
 class _LocationScreenState extends State<LocationScreen> {
+  int temperature;
+
   void updateUI() {}
 
   @override
