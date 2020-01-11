@@ -34,6 +34,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       size: 50.0,
                     ),
                   ),
+                  FlatButton()
                 ],
               ),
             ],
