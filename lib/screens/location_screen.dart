@@ -54,7 +54,10 @@ class _LocationScreenState extends State<LocationScreen> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
-                child: Text("It's time in San francisco"),
+                child: Text(
+                  "It's time in San francisco",
+                  textAlign: TextAlign.right,
+                ),
               )
             ],
           ),
