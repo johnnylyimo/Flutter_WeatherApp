@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/screens/location_screen.dart';
 import 'package:weather_app/services/location.dart';
 import 'package:weather_app/services/networking.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 const apiKey = 'c09b93a8b88b7ad28a48177be7086af5';
 
