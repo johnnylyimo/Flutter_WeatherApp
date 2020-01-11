@@ -24,7 +24,9 @@ class _LocationScreenState extends State<LocationScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Row(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              ),
             ],
           ),
         ),
