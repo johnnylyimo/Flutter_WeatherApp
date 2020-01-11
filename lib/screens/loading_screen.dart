@@ -29,9 +29,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     return Scaffold(
       body: Center(
           child: RaisedButton(
-        onPressed: () {
-          getData();
-        },
+        onPressed: () {},
         child: Text(
           'Get Location',
         ),
