@@ -10,7 +10,11 @@ class _LocationScreenState extends State<LocationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(image: DecorationImage()),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/loacti.jpg'),
+          ),
+        ),
       ),
     );
   }
