@@ -47,12 +47,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: RaisedButton(
-        onPressed: () {},
-        child: Text(
-          'Get Location',
-        ),
-      )),
+        child: SpinKitDoubleBounce(),
+      ),
     );
   }
 }
