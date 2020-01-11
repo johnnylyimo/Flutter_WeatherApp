@@ -26,6 +26,9 @@ class _LocationScreenState extends State<LocationScreen> {
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  FlatButton(),
+                ],
               ),
             ],
           ),
