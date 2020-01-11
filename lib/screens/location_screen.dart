@@ -13,7 +13,9 @@ class _LocationScreenState extends State<LocationScreen> {
   int condition;
   String cityName;
 
-  void updateUI(dynamic weatherData) {}
+  void updateUI(dynamic weatherData) {
+    double temp = weatherData['main']['temp'];
+  }
 
   @override
   Widget build(BuildContext context) {
