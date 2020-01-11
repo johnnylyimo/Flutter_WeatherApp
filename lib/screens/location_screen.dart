@@ -51,7 +51,8 @@ class _LocationScreenState extends State<LocationScreen> {
                     Text('*'),
                   ],
                 ),
-              )
+              ),
+              Padding()
             ],
           ),
         ),
