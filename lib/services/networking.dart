@@ -8,6 +8,8 @@ class NetworkHelper {
   void getData() async {
     http.Response response = await http.get(url);
 
-    if (response.statusCode == 200) {}
+    if (response.statusCode == 200) {
+      String data = response.body;
+    }
   }
 }
