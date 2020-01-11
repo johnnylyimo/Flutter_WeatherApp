@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class LocationScreen extends StatefulWidget {
   final locationWeather;
+  LocationScreen({this.locationWeather}); // Constructor
 
   @override
   _LocationScreenState createState() => _LocationScreenState();
