@@ -19,7 +19,9 @@ class _LocationScreenState extends State<LocationScreen> {
           ),
         ),
         constraints: BoxConstraints.expand(),
-        child: Column(),
+        child: SafeArea(
+          child: Column(),
+        ),
       ),
     );
   }
