@@ -29,7 +29,10 @@ class _LocationScreenState extends State<LocationScreen> {
                 children: <Widget>[
                   FlatButton(
                     onPressed: () {},
-                    child: Icon(Icons.thumb_up),
+                    child: Icon(
+                      Icons.thumb_up,
+                      size: 50.0,
+                    ),
                   ),
                 ],
               ),
