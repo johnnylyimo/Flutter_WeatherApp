@@ -5,5 +5,7 @@ class NetworkHelper {
   final String url;
   NetworkHelper(this.url);
 
-  void getData() async {}
+  void getData() async {
+    http.Response response = await http.get(url);
+  }
 }
