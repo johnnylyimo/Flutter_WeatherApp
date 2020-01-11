@@ -45,7 +45,11 @@ class _LocationScreenState extends State<LocationScreen> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
-                child: Row(),
+                child: Row(
+                  children: <Widget>[
+                    Text('32"'),
+                  ],
+                ),
               )
             ],
           ),
