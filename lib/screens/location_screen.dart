@@ -11,6 +11,7 @@ class LocationScreen extends StatefulWidget {
 class _LocationScreenState extends State<LocationScreen> {
   int temperature;
   int condition;
+  String cityName;
 
   void updateUI() {}
 
