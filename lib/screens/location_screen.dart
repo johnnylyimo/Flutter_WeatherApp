@@ -22,6 +22,7 @@ class _LocationScreenState extends State<LocationScreen> {
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
           ),
         ),
       ),
