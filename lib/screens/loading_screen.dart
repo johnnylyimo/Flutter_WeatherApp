@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:weather_app/services/location.dart';
+
+const apiKey = 'c09b93a8b88b7ad28a48177be7086af5';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -19,6 +20,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void getLocation() async {
     Location location = Location();
     await location.getCurrentLocation();
+    print(location.latitude);
+    print(location.longitude);
   }
 
   @override
@@ -27,7 +30,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       body: Center(
           child: RaisedButton(
         onPressed: () {
-          getLocation();
+          getData();
         },
         child: Text(
           'Get Location',
