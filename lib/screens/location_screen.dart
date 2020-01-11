@@ -9,6 +9,8 @@ class LocationScreen extends StatefulWidget {
 }
 
 class _LocationScreenState extends State<LocationScreen> {
+  void updateUI() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
