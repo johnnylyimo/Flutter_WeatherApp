@@ -18,6 +18,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 Colors.white.withOpacity(0.8), BlendMode.dstATop),
           ),
         ),
+        constraints: BoxConstraints.expand(),
       ),
     );
   }
