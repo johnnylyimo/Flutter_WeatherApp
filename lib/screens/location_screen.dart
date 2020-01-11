@@ -36,6 +36,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                   FlatButton(
                     onPressed: () {},
+                    child: Icon(Icons.thumb_down),
                   )
                 ],
               ),
