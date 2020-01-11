@@ -17,6 +17,7 @@ class _LocationScreenState extends State<LocationScreen> {
     double temp = weatherData['main']['temp'];
     temperature = temp.toInt();
     condition = weatherData['weather'][0]['id'];
+    cityName = weatherData['name'];
   }
 
   @override
