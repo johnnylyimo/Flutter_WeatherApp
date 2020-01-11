@@ -52,7 +52,9 @@ class _LocationScreenState extends State<LocationScreen> {
                   ],
                 ),
               ),
-              Padding()
+              Padding(
+                padding: EdgeInsets.only(left: 15.0),
+              )
             ],
           ),
         ),
