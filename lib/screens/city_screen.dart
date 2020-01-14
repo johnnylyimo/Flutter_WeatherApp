@@ -36,6 +36,7 @@ class _CityScreenState extends State<CityScreen> {
                 child: TextField(
                   decoration: InputDecoration(
                     filled: true,
+                    fillColor: Colors.white30,
                   ),
                 ),
               ),
