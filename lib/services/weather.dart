@@ -18,4 +18,6 @@ class WeatherModel {
       return '🤷‍';
     }
   }
+
+  String getMessage(int temp) {}
 }
