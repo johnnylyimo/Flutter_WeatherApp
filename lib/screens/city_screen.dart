@@ -10,7 +10,11 @@ class _CityScreenState extends State<CityScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(image: DecorationImage()),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/cityWallpaper.jpg'),
+          ),
+        ),
       ),
     );
   }
