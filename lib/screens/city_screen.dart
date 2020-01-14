@@ -36,6 +36,7 @@ class _CityScreenState extends State<CityScreen> {
               ),
               FlatButton(
                 onPressed: () {},
+                child: Text('Get Weather'),
               )
             ],
           ),
