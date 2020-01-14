@@ -1,3 +1,5 @@
+import 'package:weather_app/services/location.dart';
+
 class WeatherModel {
   String getWeatherIcon(int condition) {
     if (condition < 300) {
