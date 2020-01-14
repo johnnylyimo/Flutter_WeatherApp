@@ -22,7 +22,9 @@ class _CityScreenState extends State<CityScreen> {
             children: <Widget>[
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(),
+                child: FlatButton(
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
