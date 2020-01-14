@@ -26,7 +26,9 @@ class _LocationScreenState extends State<LocationScreen> {
   void updateUI(dynamic weatherData) {
     setState(() {
       // avoid error, when location turn off or api server down
-      if (weatherData == null) {}
+      if (weatherData == null) {
+        temperature = 0;
+      }
 
       double temp = weatherData['main']['temp'];
       temperature = temp.toInt();
