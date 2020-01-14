@@ -26,6 +26,7 @@ class _LocationScreenState extends State<LocationScreen> {
     temperature = temp.toInt();
     condition = weatherData['weather'][0]['id'];
     cityName = weatherData['name'];
+    weather.getWeatherIcon(condition);
   }
 
   @override
