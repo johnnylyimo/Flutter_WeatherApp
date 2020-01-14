@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/services/weather.dart';
+import 'package:weather_app/utils/constants.dart';
 
 class LocationScreen extends StatefulWidget {
   final locationWeather;
@@ -70,7 +71,10 @@ class _LocationScreenState extends State<LocationScreen> {
                 padding: EdgeInsets.only(left: 15.0),
                 child: Row(
                   children: <Widget>[
-                    Text('$temperatureº'),
+                    Text(
+                      '$temperatureº',
+                      style: kTempTextStyle,
+                    ),
                     Text('*'),
                   ],
                 ),
