@@ -9,7 +9,9 @@ class _CityScreenState extends State<CityScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: Container(
+        decoration: BoxDecoration(),
+      ),
     );
   }
 }
