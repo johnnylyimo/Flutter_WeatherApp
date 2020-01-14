@@ -30,7 +30,9 @@ class _CityScreenState extends State<CityScreen> {
                   ),
                 ),
               ),
-              Container()
+              Container(
+                padding: EdgeInsets.all(20.0),
+              )
             ],
           ),
         ),
