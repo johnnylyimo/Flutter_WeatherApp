@@ -65,7 +65,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   FlatButton(
                     onPressed: () {},
                     child: Icon(
-                      Icons.thumb_down,
+                      Icons.location_city,
                       size: 50.0,
                     ),
                   )
