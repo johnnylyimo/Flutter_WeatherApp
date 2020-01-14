@@ -39,6 +39,7 @@ class _CityScreenState extends State<CityScreen> {
                     fillColor: Colors.white30,
                     icon: Icon(
                       Icons.location_city,
+                      color: Colors.black,
                     ),
                     hintText: 'Enter City name',
                   ),
