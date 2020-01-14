@@ -30,6 +30,7 @@ class _LocationScreenState extends State<LocationScreen> {
         temperature = 0;
         weatherIcon = 'Error';
         weatherMessage = 'Unable to get weather data';
+        cityName = '';
       }
 
       double temp = weatherData['main']['temp'];
