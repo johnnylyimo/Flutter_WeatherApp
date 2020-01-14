@@ -16,6 +16,7 @@ class _CityScreenState extends State<CityScreen> {
             fit: BoxFit.cover,
           ),
         ),
+        constraints: BoxConstraints.expand(),
       ),
     );
   }
