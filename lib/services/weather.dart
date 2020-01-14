@@ -5,6 +5,9 @@ class WeatherModel {
   Future getLocationWeather() async {
     Location location = Location();
     await location.getCurrentLocation();
+
+    NetworkHelper networkHelper = NetworkHelper(
+        'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
   }
 
   String getWeatherIcon(int condition) {
