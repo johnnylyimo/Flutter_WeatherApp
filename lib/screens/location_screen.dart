@@ -18,14 +18,14 @@ class _LocationScreenState extends State<LocationScreen> {
 
   WeatherModel weather = WeatherModel();
   int temperature;
-  int condition;
   String cityName;
+  String weatherIcon;
 
   void updateUI(dynamic weatherData) {
     double temp = weatherData['main']['temp'];
     temperature = temp.toInt();
-    condition = weatherData['weather'][0]['id'];
     cityName = weatherData['name'];
+    var condition = weatherData['weather'][0]['id'];
     weather.getWeatherIcon(condition);
   }
 
