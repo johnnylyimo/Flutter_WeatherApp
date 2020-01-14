@@ -16,6 +16,7 @@ class _LocationScreenState extends State<LocationScreen> {
     updateUI(widget.locationWeather);
   }
 
+  WeatherModel weather = WeatherModel();
   int temperature;
   int condition;
   String cityName;
