@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-const kTempTextStyle = TextStyle()
+const kTempTextStyle = TextStyle(
+  fontFamily: 'Spartan',
+);
