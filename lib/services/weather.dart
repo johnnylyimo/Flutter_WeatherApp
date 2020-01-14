@@ -1,1 +1,3 @@
-class WeatherModel {}
+class WeatherModel {
+  String getWeatherIcon(int condition) {}
+}
