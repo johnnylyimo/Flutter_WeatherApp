@@ -14,3 +14,5 @@ const kButtonTextStyle = TextStyle(
   fontFamily: 'Spantan',
   fontSize: 30.0,
 );
+
+const kConditionTextStyle = TextStyle();
