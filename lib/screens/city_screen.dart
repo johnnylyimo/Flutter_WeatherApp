@@ -19,7 +19,11 @@ class _CityScreenState extends State<CityScreen> {
         constraints: BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
-            children: <Widget>[Align()],
+            children: <Widget>[
+              Align(
+                alignment: Alignment.topLeft,
+              ),
+            ],
           ),
         ),
       ),
