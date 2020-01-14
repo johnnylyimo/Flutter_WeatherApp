@@ -10,4 +10,6 @@ const kMessageTextStyle = TextStyle(
   fontSize: 60.0,
 );
 
-const kButtonTextStyle = TextStyle();
+const kButtonTextStyle = TextStyle(
+  fontFamily: 'Spantan',
+);
