@@ -75,7 +75,10 @@ class _LocationScreenState extends State<LocationScreen> {
                       '$temperatureº',
                       style: kTempTextStyle,
                     ),
-                    Text('*'),
+                    Text(
+                      '🌩',
+                      style: kConditionTextStyle,
+                    ),
                   ],
                 ),
               ),
