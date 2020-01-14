@@ -28,6 +28,7 @@ class _LocationScreenState extends State<LocationScreen> {
       // avoid error, when location turn off or api server down
       if (weatherData == null) {
         temperature = 0;
+        weatherIcon = 'Error';
       }
 
       double temp = weatherData['main']['temp'];
