@@ -21,6 +21,7 @@ class _LocationScreenState extends State<LocationScreen> {
   int temperature;
   String cityName;
   String weatherIcon;
+  String weatherMessage;
 
   void updateUI(dynamic weatherData) {
     double temp = weatherData['main']['temp'];
