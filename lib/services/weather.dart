@@ -1,4 +1,5 @@
 import 'package:weather_app/services/location.dart';
+import 'package:weather_app/services/networking.dart';
 
 class WeatherModel {
   String getWeatherIcon(int condition) {
