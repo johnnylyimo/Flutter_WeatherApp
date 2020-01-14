@@ -13,6 +13,7 @@ class _CityScreenState extends State<CityScreen> {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/cityWallpaper.jpg'),
+            fit: BoxFit.cover,
           ),
         ),
       ),
