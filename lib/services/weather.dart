@@ -4,6 +4,8 @@ import 'package:weather_app/services/networking.dart';
 const apiKey = 'c09b93a8b88b7ad28a48177be7086af5';
 
 class WeatherModel {
+  void getCityWeather(String cityName) {}
+
   Future<dynamic> getLocationWeather() async {
     Location location = Location();
     await location.getCurrentLocation();
