@@ -83,6 +83,10 @@ class _LocationScreenState extends State<LocationScreen> {
                           builder: (context) => CityScreen(),
                         ),
                       );
+                      if (typedCityName != null) {
+                        var weatherData =
+                            await weather.getCityWeather(typedCityName);
+                      }
                     },
                     child: Icon(
                       Icons.location_city,
