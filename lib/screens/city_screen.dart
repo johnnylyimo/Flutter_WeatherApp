@@ -37,6 +37,7 @@ class _CityScreenState extends State<CityScreen> {
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: Colors.white30,
+                    border: OutlineInputBorder(),
                     icon: Icon(
                       Icons.location_city,
                       color: Colors.black,
