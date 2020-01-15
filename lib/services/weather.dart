@@ -7,6 +7,7 @@ class WeatherModel {
   void getCityWeather(String cityName) {
     var url =
         'https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey&units=metric';
+    NetworkHelper networkHelper = NetworkHelper(url);
   }
 
   Future<dynamic> getLocationWeather() async {
