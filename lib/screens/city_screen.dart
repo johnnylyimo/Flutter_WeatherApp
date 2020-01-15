@@ -52,6 +52,9 @@ class _CityScreenState extends State<CityScreen> {
                     ),
                     hintText: 'Enter City name',
                   ),
+                  onChanged: (value) {
+                    cityName = value;
+                  },
                 ),
               ),
               FlatButton(
