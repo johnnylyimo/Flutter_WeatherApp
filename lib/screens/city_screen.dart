@@ -21,6 +21,7 @@ class _CityScreenState extends State<CityScreen> {
         constraints: BoxConstraints.expand(),
         child: SafeArea(
           child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
             child: Column(
               children: <Widget>[
                 Align(
