@@ -20,53 +20,55 @@ class _CityScreenState extends State<CityScreen> {
         ),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
-          child: Column(
-            children: <Widget>[
-              Align(
-                alignment: Alignment.topLeft,
-                child: FlatButton(
-                  onPressed: () {},
-                  child: Icon(
-                    Icons.arrow_back_ios,
-                    size: 50.0,
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: FlatButton(
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      size: 50.0,
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                child: TextField(
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white30,
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10.0),
-                        ),
-                        borderSide: BorderSide.none),
-                    icon: Icon(
-                      Icons.location_city,
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                  child: TextField(
+                    style: TextStyle(
                       color: Colors.black,
                     ),
-                    hintText: 'Enter City name',
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white30,
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10.0),
+                          ),
+                          borderSide: BorderSide.none),
+                      icon: Icon(
+                        Icons.location_city,
+                        color: Colors.black,
+                      ),
+                      hintText: 'Enter City name',
+                    ),
+                    onChanged: (value) {
+                      cityName = value;
+                    },
                   ),
-                  onChanged: (value) {
-                    cityName = value;
+                ),
+                FlatButton(
+                  onPressed: () {
+                    Navigator.pop(context, cityName);
                   },
-                ),
-              ),
-              FlatButton(
-                onPressed: () {
-                  Navigator.pop(context, cityName);
-                },
-                child: Text(
-                  'Get Weather',
-                  style: kButtonTextStyle,
-                ),
-              )
-            ],
+                  child: Text(
+                    'Get Weather',
+                    style: kButtonTextStyle,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
