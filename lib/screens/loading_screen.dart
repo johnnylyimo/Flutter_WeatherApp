@@ -10,6 +10,7 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
+  // Show Message if phone is not conneted to the Internet
   void _showDialog() {
     showDialog(
         context: context,
@@ -20,7 +21,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
               textAlign: TextAlign.center,
             ),
             content: Text(
-              'Please turn on Internet,\nthen Close and Open again this App',
+              'Please turn on Internet and Location,\nthen Close and Open again this App',
               textAlign: TextAlign.center,
             ),
             shape: RoundedRectangleBorder(
@@ -66,7 +67,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getLocationData();
+//    getLocationData();
+    checkInternetConnectivity();
   }
 
   @override
