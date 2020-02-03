@@ -52,7 +52,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   //Check device is connected to the internet or not.
-  void checkInternetConnectivity() async {}
+  void checkInternetConnectivity() async {
+    var result = await Connectivity().checkConnectivity();
+  }
 
   @override
   void initState() {
