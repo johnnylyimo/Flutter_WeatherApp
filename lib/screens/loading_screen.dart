@@ -9,23 +9,27 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
-
-
-
-  void _showDialog(){
+  void _showDialog() {
     showDialog(
-      context: context,
-      builder: (context){
-        return AlertDialog(
-          title: Text('No Internet Connnection!', textAlign: TextAlign.center,),
-          content: Text('Please turn on Internet,\nthen Close and Open again this App', textAlign: TextAlign.center,),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-        );
-      }
-    );
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text(
+              'No Internet Connnection!',
+              textAlign: TextAlign.center,
+            ),
+            content: Text(
+              'Please turn on Internet,\nthen Close and Open again this App',
+              textAlign: TextAlign.center,
+            ),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)),
+            actions: <Widget>[
+              FlatButton(),
+            ],
+          );
+        });
   }
-
-
 
   @override
   void initState() {
