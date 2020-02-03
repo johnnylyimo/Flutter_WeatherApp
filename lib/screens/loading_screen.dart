@@ -37,14 +37,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
         });
   }
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getLocationData();
-  }
-
-//  bring current user location of the device
+  //  bring current user location of the device
   void getLocationData() async {
     var weatherData = await WeatherModel().getLocationWeather();
 
@@ -56,6 +49,16 @@ class _LoadingScreenState extends State<LoadingScreen> {
         ),
       ),
     );
+  }
+
+  //Check device is connected to the internet or not.
+  void checkInternetConnectivity() async {}
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getLocationData();
   }
 
   @override
