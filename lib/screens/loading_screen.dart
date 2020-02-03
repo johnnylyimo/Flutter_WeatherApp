@@ -25,7 +25,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0)),
             actions: <Widget>[
-              FlatButton(),
+              FlatButton(
+                child: Text('OK'),
+              ),
             ],
           );
         });
