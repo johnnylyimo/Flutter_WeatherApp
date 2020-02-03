@@ -27,6 +27,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
             actions: <Widget>[
               FlatButton(
                 child: Text('OK'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
               ),
             ],
           );
