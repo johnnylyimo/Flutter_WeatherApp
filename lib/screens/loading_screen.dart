@@ -13,6 +13,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
 
   void _showDialog(){
+    showDialog(
+      context: context,
+    );
   }
 
 
