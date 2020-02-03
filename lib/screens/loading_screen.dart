@@ -9,6 +9,14 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
+
+
+
+  void _showDialog(){
+  }
+
+
+
   @override
   void initState() {
     // TODO: implement initState
