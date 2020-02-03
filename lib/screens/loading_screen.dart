@@ -17,6 +17,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       context: context,
       builder: (context){
         return AlertDialog(
+          title: Text('No Internet Connnection!', textAlign: TextAlign.center,),
         );
       }
     );
