@@ -54,6 +54,12 @@ class _LoadingScreenState extends State<LoadingScreen> {
   //Check device is connected to the internet or not.
   void checkInternetConnectivity() async {
     var result = await Connectivity().checkConnectivity();
+    if (result == ConnectivityResult.mobile ||
+        result == ConnectivityResult.wifi) {
+      getLocationData();
+    } else if (result == ConnectivityResult.none) {
+      _showDialog();
+    }
   }
 
   @override
