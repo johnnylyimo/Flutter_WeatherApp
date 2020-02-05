@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'loading_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
