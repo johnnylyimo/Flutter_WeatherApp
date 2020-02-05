@@ -3,6 +3,7 @@ import 'package:weather_app/screens/location_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:weather_app/services/weather.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:geolocator/geolocator.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
