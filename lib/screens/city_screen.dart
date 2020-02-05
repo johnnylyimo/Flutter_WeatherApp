@@ -62,6 +62,7 @@ class _CityScreenState extends State<CityScreen> {
                   ),
                 ),
                 OutlineButton(
+                  shape: StadiumBorder(),
                   onPressed: () {
                     Navigator.pop(context, cityName);
                   },
