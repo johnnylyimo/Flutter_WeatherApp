@@ -26,6 +26,9 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Text('weather App'),
+          ],
         ),
       ),
     );
