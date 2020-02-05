@@ -39,6 +39,33 @@ class _LoadingScreenState extends State<LoadingScreen> {
         });
   }
 
+  void _showDialogForLocation() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text(
+              'Location is Disabled!',
+              textAlign: TextAlign.center,
+            ),
+            content: Text(
+              'Please turn on Location,\nthen Close and Open again this App',
+              textAlign: TextAlign.center,
+            ),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('OK'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        });
+  }
+
   //  bring current user location of the device
   void getLocationData() async {
     var weatherData = await WeatherModel().getLocationWeather();
