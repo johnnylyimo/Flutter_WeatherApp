@@ -61,7 +61,7 @@ class _CityScreenState extends State<CityScreen> {
                     },
                   ),
                 ),
-                FlatButton(
+                OutlineButton(
                   onPressed: () {
                     Navigator.pop(context, cityName);
                   },
