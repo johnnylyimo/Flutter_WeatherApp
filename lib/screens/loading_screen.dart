@@ -12,7 +12,7 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> {
   // Show Message if phone is not conneted to the Internet
-  void _showDialog() {
+  void _showDialogForInternet() {
     showDialog(
         context: context,
         builder: (context) {
@@ -22,7 +22,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
               textAlign: TextAlign.center,
             ),
             content: Text(
-              'Please turn on Internet and Location,\nthen Close and Open again this App',
+              'Please turn on Internet,\nthen Close and Open again this App',
               textAlign: TextAlign.center,
             ),
             shape: RoundedRectangleBorder(
@@ -49,7 +49,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
               textAlign: TextAlign.center,
             ),
             content: Text(
-              'Please turn on Location,\nthen Close and Open again this App',
+              'Please turn on Location/GPS,\nthen Close and Open again this App',
               textAlign: TextAlign.center,
             ),
             shape: RoundedRectangleBorder(
@@ -80,14 +80,16 @@ class _LoadingScreenState extends State<LoadingScreen> {
     );
   }
 
-  //Check device is connected to the internet or not.
-  void checkInternetConnectivity() async {
+  //Check device is device connected and location is on.
+  void isConnectedLocationIsOn() async {
     var result = await Connectivity().checkConnectivity();
-    if (result == ConnectivityResult.mobile ||
-        result == ConnectivityResult.wifi) {
+    bool isLocationEnabled = await Geolocator().isLocationServiceEnabled();
+    if (result == ConnectivityResult.none) {
+      _showDialogForInternet();
+    } else if (isLocationEnabled == false) {
+      _showDialogForLocation();
+    } else {
       getLocationData();
-    } else if (result == ConnectivityResult.none) {
-      _showDialog();
     }
   }
 
@@ -96,7 +98,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     // TODO: implement initState
     super.initState();
 //    getLocationData();
-    checkInternetConnectivity();
+    isConnectedLocationIsOn();
   }
 
   @override
