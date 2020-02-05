@@ -28,7 +28,12 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text('Weather App'),
+            Text(
+              'Weather App',
+              style: TextStyle(
+                fontSize: 30,
+              ),
+            ),
             FlutterLogo(
               size: 300,
             ),
