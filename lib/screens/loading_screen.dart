@@ -11,7 +11,7 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
-  // Show Message if phone is not conneted to the Internet
+  // Show Message if phone is not connected to the Internet
   void _showDialogForInternet() {
     showDialog(
         context: context,
