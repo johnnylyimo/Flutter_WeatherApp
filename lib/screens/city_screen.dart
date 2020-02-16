@@ -7,6 +7,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
+  TextEditingController _controller = TextEditingController();
   String cityName;
   @override
   Widget build(BuildContext context) {
