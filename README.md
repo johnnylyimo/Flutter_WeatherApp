@@ -1,16 +1,11 @@
-# weather_app
+# Weather App
 
-A Weather Flutter application.
+A Flutter application, let you know current weather from where you are or search manually by typing City name.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is two more steps to a Flutter learning journey suitable for Intermediate Students. Here you learn how to work  packages, Http client for fetch weather data from weather API, asynchronous and much more.
 
-A few resources to get you started if this is your first Flutter project:
+print (" SHARING IS CARING ")
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+fmt.Println ( " LET ME ALSO MAKE THE THE WORLD BETTER PLACE. ")
