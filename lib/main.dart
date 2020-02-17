@@ -9,7 +9,7 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Weather App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
