@@ -19,12 +19,13 @@ class _LocationScreenState extends State<LocationScreen> {
   }
 
   WeatherModel weather = WeatherModel();
-  int temperature;
+  num temperature;
   String cityName;
   String weatherIcon;
   String weatherMessage;
 
   void updateUI(dynamic weatherData) {
+    print('DEBUG: ${weatherData['main']['temp']}');
     setState(() {
       // avoid error, when location turn off or api server down
       if (weatherData == null) {
@@ -35,8 +36,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return; // exist the method
       }
 
-      double temp = weatherData['main']['temp'];
-      temperature = temp.toInt();
+      temperature = weatherData['main']['temp'];
       cityName = weatherData['name'];
       var condition = weatherData['weather'][0]['id'];
       weatherIcon = weather.getWeatherIcon(condition);
