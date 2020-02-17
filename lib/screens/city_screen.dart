@@ -62,6 +62,7 @@ class _CityScreenState extends State<CityScreen> {
                       setState(() {
                         cityName = value;
                       });
+                      Navigator.pop(context, cityName);
                     },
                   ),
                 ),
